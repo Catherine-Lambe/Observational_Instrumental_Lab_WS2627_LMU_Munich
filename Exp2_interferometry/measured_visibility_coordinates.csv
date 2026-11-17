@@ -1,115 +1,115 @@
 Task,Configuration,Filename,Baseline [mm],Visibility
-A,Single star,visA_star7_app7_30s_7,2,0.970758
-A,Single star,visA_star7_app7_30s_6,2,0.959768
-A,Single star,visA_star7_app7_30s,2,0.962378
-A,Single star,visA_star7_app7_30s_9,2,0.965278
-A,Single star,visA_star7_app7_30s_5,2,0.969919
-A,Single star,visA_star7_app7_30s_4,2,0.962977
-A,Single star,visA_star7_app7_30s_8,2,0.962906
-A,Single star,visA_star7_app7_30s_3,2,0.970081
-A,Single star,visA_star7_app7_30s_10,2,0.967643
-A,Single star,visA_star7_app7_30s_2,2,0.961598
-A,Single star,visA_star7_app8_30s_3,4,0.816073
-A,Single star,visA_star7_app8_30s_2,4,0.810933
-A,Single star,visA_star7_app8_30s,4,0.830273
-A,Single star,visA_star7_app8_30s_4,4,0.802207
-A,Single star,visA_star7_app4_30s_2,5,0.728588
-A,Single star,visA_star7_app4_30s_3,5,0.740553
-A,Single star,visA_star7_app4_30s_4,5,0.741454
-A,Single star,visA_star7_app4_30s_8,5,0.716064
-A,Single star,visA_star7_app4_30s_9,5,0.719162
-A,Single star,visA_star7_app4_30s_5,5,0.704931
-A,Single star,visA_star7_app4_30s_6,5,0.713736
-A,Single star,visA_star7_app4_30s_10,5,0.697994
-A,Single star,visA_star7_app4_30s_7,5,0.727168
-A,Single star,visA_star7_app4_30s,5,0.699962
-A,Single star,visA_star7_app9_30s_2,6,0.591937
-A,Single star,visA_star7_app9_30s_3,6,0.584468
-A,Single star,visA_star7_app9_30s_4,6,0.586402
-A,Single star,visA_star7_app9_30s,6,0.651819
-A,Single star,visA_star7_app10_30s_10,8,0.424609
-A,Single star,visA_star7_app10_30s,8,0.414831
-A,Single star,visA_star7_app10_30s_6,8,0.447464
-A,Single star,visA_star7_app10_30s_7,8,0.466910
-A,Single star,visA_star7_app10_30s_8,8,0.404783
-A,Single star,visA_star7_app10_30s_4,8,0.460478
-A,Single star,visA_star7_app10_30s_5,8,0.433107
-A,Single star,visA_star7_app10_30s_9,8,0.447428
-A,Single star,visA_star7_app10_30s_2,8,0.415412
-A,Single star,visA_star7_app10_30s_3,8,0.425134
-A,Single star,visA_star7_app5_30s_3,10,0.245681
-A,Single star,visA_star7_app5_30s_2,10,0.279896
-A,Single star,visA_star7_app5_30s,10,0.253456
-A,Single star,visA_star7_app5_30s_4,10,0.233847
-A,Single star,visA_star7_app6_30s_4,15,0.051981
-A,Single star,visA_star7_app6_30s_2,15,0.078400
-A,Single star,visA_star7_app6_30s_3,15,0.071240
-A,Single star,visA_star7_app6_30s,15,0.069984
-B,Binary: Parallel,visB_star7_app7_30s_4,2,0.929577
-B,Binary: Parallel,visB_star7_app7_30s_2,2,1.000000
-B,Binary: Parallel,visB_star7_app7_30s_3,2,0.895105
-B,Binary: Parallel,visB_star7_app7_30s_1,2,1.044776
-B,Binary: Parallel,visB_star7_app8_30s_2,4,0.484375
-B,Binary: Parallel,visB_star7_app8_30s_3,4,0.563786
-B,Binary: Parallel,visB_star7_app8_30s_4,4,0.428571
-B,Binary: Parallel,visB_star7_app8_30s_1,4,0.421245
-B,Binary: Parallel,visB_star7_app4_30s_7,5,0.716364
-B,Binary: Parallel,visB_star7_app4_30s_6,5,0.654930
-B,Binary: Parallel,visB_star7_app4_30s_1,5,0.690037
-B,Binary: Parallel,visB_star7_app4_30s_10,5,0.579310
-B,Binary: Parallel,visB_star7_app4_30s_3,5,0.733333
-B,Binary: Parallel,visB_star7_app4_30s_2,5,0.671429
-B,Binary: Parallel,visB_star7_app4_30s_5,5,0.654930
-B,Binary: Parallel,visB_star7_app4_30s_9,5,0.616725
-B,Binary: Parallel,visB_star7_app4_30s_8,5,0.676259
-B,Binary: Parallel,visB_star7_app4_30s_4,5,0.783784
-B,Binary: Parallel,visB_star7_app9_30s_1,6,0.816254
-B,Binary: Parallel,visB_star7_app9_30s_3,6,0.852941
-B,Binary: Parallel,visB_star7_app9_30s_2,6,0.867647
-B,Binary: Parallel,visB_star7_app9_30s_4,6,0.842294
-B,Binary: Parallel,visB_star7_app10_30s_1,8,0.835294
-B,Binary: Parallel,visB_star7_app10_30s_4,8,0.734317
-B,Binary: Parallel,visB_star7_app10_30s_3,8,0.866142
-B,Binary: Parallel,visB_star7_app10_30s_2,8,0.849802
-B,Binary: Parallel,visB_star7_app5_30s_2,10,0.447273
-B,Binary: Parallel,visB_star7_app5_30s_10,10,0.464684
-B,Binary: Parallel,visB_star7_app5_30s_3,10,0.384615
-B,Binary: Parallel,visB_star7_app5_30s_8,10,0.449275
-B,Binary: Parallel,visB_star7_app5_30s_4,10,0.390071
-B,Binary: Parallel,visB_star7_app5_30s_5,10,0.544402
-B,Binary: Parallel,visB_star7_app5_30s_9,10,0.559846
-B,Binary: Parallel,visB_star7_app5_30s_6,10,0.372414
-B,Binary: Parallel,visB_star7_app5_30s_7,10,0.509434
-B,Binary: Parallel,visB_star7_app5_30s_1,10,0.395833
-B,Binary: Parallel,visB_star7_app6_30s_1,15,0.607306
-B,Binary: Parallel,visB_star7_app6_30s_4,15,0.585253
-B,Binary: Parallel,visB_star7_app6_30s_3,15,0.603687
-B,Binary: Parallel,visB_star7_app6_30s_2,15,0.566038
-C,Binary: 45 degrees,visC_star5_app7_30s_2,2,0.900744
-C,Binary: 45 degrees,visC_star5_app7_30s_3,2,0.895425
-C,Binary: 45 degrees,visC_star5_app7_30s_4,2,0.924370
-C,Binary: 45 degrees,visC_star5_app7_30s_1,2,0.900166
-C,Binary: 45 degrees,visC_star5_app8_30s_4,4,0.513983
-C,Binary: 45 degrees,visC_star5_app8_30s_2,4,0.542240
-C,Binary: 45 degrees,visC_star5_app8_30s_3,4,0.467545
-C,Binary: 45 degrees,visC_star5_app8_30s_1,4,0.508228
-C,Binary: 45 degrees,visC_star5_app4_30s_1,5,0.278626
-C,Binary: 45 degrees,visC_star5_app4_30s_4,5,0.268615
-C,Binary: 45 degrees,visC_star5_app4_30s_3,5,0.297246
-C,Binary: 45 degrees,visC_star5_app4_30s_2,5,0.262190
-C,Binary: 45 degrees,visC_star5_app9_30s_1,6,0.239085
-C,Binary: 45 degrees,visC_star5_app9_30s_4,6,0.255639
-C,Binary: 45 degrees,visC_star5_app9_30s_3,6,0.218031
-C,Binary: 45 degrees,visC_star5_app9_30s_2,6,0.203267
-C,Binary: 45 degrees,visC_star5_app10_30s_2,8,0.493230
-C,Binary: 45 degrees,visC_star5_app10_30s_3,8,0.499037
-C,Binary: 45 degrees,visC_star5_app10_30s_4,8,0.511198
-C,Binary: 45 degrees,visC_star5_app10_30s_1,8,0.489079
-C,Binary: 45 degrees,visC_star5_app5_30s_4,10,0.676728
-C,Binary: 45 degrees,visC_star5_app5_30s_2,10,0.636888
-C,Binary: 45 degrees,visC_star5_app5_30s_3,10,0.608821
-C,Binary: 45 degrees,visC_star5_app5_30s_1,10,0.625360
-C,Binary: 45 degrees,visC_star5_app6_30s_1,15,0.300874
-C,Binary: 45 degrees,visC_star5_app6_30s_3,15,0.309045
-C,Binary: 45 degrees,visC_star5_app6_30s_2,15,0.279213
-C,Binary: 45 degrees,visC_star5_app6_30s_4,15,0.253623
+A,Single star,visA_star7_app7_30s_7,2,0.954197
+A,Single star,visA_star7_app7_30s_6,2,0.924436
+A,Single star,visA_star7_app7_30s,2,0.950578
+A,Single star,visA_star7_app7_30s_9,2,0.951149
+A,Single star,visA_star7_app7_30s_5,2,0.944201
+A,Single star,visA_star7_app7_30s_4,2,0.948101
+A,Single star,visA_star7_app7_30s_8,2,0.938414
+A,Single star,visA_star7_app7_30s_3,2,0.948730
+A,Single star,visA_star7_app7_30s_10,2,0.943796
+A,Single star,visA_star7_app7_30s_2,2,0.939170
+A,Single star,visA_star7_app8_30s_3,4,0.779265
+A,Single star,visA_star7_app8_30s_2,4,0.781353
+A,Single star,visA_star7_app8_30s,4,0.799159
+A,Single star,visA_star7_app8_30s_4,4,0.768014
+A,Single star,visA_star7_app4_30s_2,5,0.700358
+A,Single star,visA_star7_app4_30s_3,5,0.694597
+A,Single star,visA_star7_app4_30s_4,5,0.690792
+A,Single star,visA_star7_app4_30s_8,5,0.672562
+A,Single star,visA_star7_app4_30s_9,5,0.687295
+A,Single star,visA_star7_app4_30s_5,5,0.667942
+A,Single star,visA_star7_app4_30s_6,5,0.689492
+A,Single star,visA_star7_app4_30s_10,5,0.648587
+A,Single star,visA_star7_app4_30s_7,5,0.652302
+A,Single star,visA_star7_app4_30s,5,0.673539
+A,Single star,visA_star7_app9_30s_2,6,0.543064
+A,Single star,visA_star7_app9_30s_3,6,0.543454
+A,Single star,visA_star7_app9_30s_4,6,0.560460
+A,Single star,visA_star7_app9_30s,6,0.577296
+A,Single star,visA_star7_app10_30s_10,8,0.361901
+A,Single star,visA_star7_app10_30s,8,0.387517
+A,Single star,visA_star7_app10_30s_6,8,0.417203
+A,Single star,visA_star7_app10_30s_7,8,0.398848
+A,Single star,visA_star7_app10_30s_8,8,0.349286
+A,Single star,visA_star7_app10_30s_4,8,0.405561
+A,Single star,visA_star7_app10_30s_5,8,0.403039
+A,Single star,visA_star7_app10_30s_9,8,0.399262
+A,Single star,visA_star7_app10_30s_2,8,0.387616
+A,Single star,visA_star7_app10_30s_3,8,0.356260
+A,Single star,visA_star7_app5_30s_3,10,0.207879
+A,Single star,visA_star7_app5_30s_2,10,0.223956
+A,Single star,visA_star7_app5_30s,10,0.199051
+A,Single star,visA_star7_app5_30s_4,10,0.240479
+A,Single star,visA_star7_app6_30s_4,15,0.036311
+A,Single star,visA_star7_app6_30s_2,15,0.046617
+A,Single star,visA_star7_app6_30s_3,15,0.021904
+A,Single star,visA_star7_app6_30s,15,0.048830
+B,Binary: Parallel,visB_star7_app7_30s_4,2,0.731865
+B,Binary: Parallel,visB_star7_app7_30s_2,2,0.804651
+B,Binary: Parallel,visB_star7_app7_30s_3,2,0.701578
+B,Binary: Parallel,visB_star7_app7_30s_1,2,0.737166
+B,Binary: Parallel,visB_star7_app8_30s_2,4,0.298375
+B,Binary: Parallel,visB_star7_app8_30s_3,4,0.274758
+B,Binary: Parallel,visB_star7_app8_30s_4,4,0.270164
+B,Binary: Parallel,visB_star7_app8_30s_1,4,0.247934
+B,Binary: Parallel,visB_star7_app4_30s_7,5,0.505948
+B,Binary: Parallel,visB_star7_app4_30s_6,5,0.488783
+B,Binary: Parallel,visB_star7_app4_30s_1,5,0.459079
+B,Binary: Parallel,visB_star7_app4_30s_10,5,0.431864
+B,Binary: Parallel,visB_star7_app4_30s_3,5,0.485836
+B,Binary: Parallel,visB_star7_app4_30s_2,5,0.374819
+B,Binary: Parallel,visB_star7_app4_30s_5,5,0.488783
+B,Binary: Parallel,visB_star7_app4_30s_9,5,0.476253
+B,Binary: Parallel,visB_star7_app4_30s_8,5,0.461538
+B,Binary: Parallel,visB_star7_app4_30s_4,5,0.506752
+B,Binary: Parallel,visB_star7_app9_30s_1,6,0.632199
+B,Binary: Parallel,visB_star7_app9_30s_3,6,0.622435
+B,Binary: Parallel,visB_star7_app9_30s_2,6,0.681944
+B,Binary: Parallel,visB_star7_app9_30s_4,6,0.739432
+B,Binary: Parallel,visB_star7_app10_30s_1,8,0.614087
+B,Binary: Parallel,visB_star7_app10_30s_4,8,0.603424
+B,Binary: Parallel,visB_star7_app10_30s_3,8,0.565066
+B,Binary: Parallel,visB_star7_app10_30s_2,8,0.578009
+B,Binary: Parallel,visB_star7_app5_30s_2,10,0.308465
+B,Binary: Parallel,visB_star7_app5_30s_10,10,0.292158
+B,Binary: Parallel,visB_star7_app5_30s_3,10,0.295925
+B,Binary: Parallel,visB_star7_app5_30s_8,10,0.224751
+B,Binary: Parallel,visB_star7_app5_30s_4,10,0.228419
+B,Binary: Parallel,visB_star7_app5_30s_5,10,0.255086
+B,Binary: Parallel,visB_star7_app5_30s_9,10,0.273767
+B,Binary: Parallel,visB_star7_app5_30s_6,10,0.288090
+B,Binary: Parallel,visB_star7_app5_30s_7,10,0.235562
+B,Binary: Parallel,visB_star7_app5_30s_1,10,0.199214
+B,Binary: Parallel,visB_star7_app6_30s_1,15,0.273535
+B,Binary: Parallel,visB_star7_app6_30s_4,15,0.271687
+B,Binary: Parallel,visB_star7_app6_30s_3,15,0.307167
+B,Binary: Parallel,visB_star7_app6_30s_2,15,0.350943
+C,Binary: 45 degrees,visC_star5_app7_30s_2,2,0.860829
+C,Binary: 45 degrees,visC_star5_app7_30s_3,2,0.863554
+C,Binary: 45 degrees,visC_star5_app7_30s_4,2,0.852215
+C,Binary: 45 degrees,visC_star5_app7_30s_1,2,0.846253
+C,Binary: 45 degrees,visC_star5_app8_30s_4,4,0.436019
+C,Binary: 45 degrees,visC_star5_app8_30s_2,4,0.415467
+C,Binary: 45 degrees,visC_star5_app8_30s_3,4,0.401845
+C,Binary: 45 degrees,visC_star5_app8_30s_1,4,0.404558
+C,Binary: 45 degrees,visC_star5_app4_30s_1,5,0.241950
+C,Binary: 45 degrees,visC_star5_app4_30s_4,5,0.179524
+C,Binary: 45 degrees,visC_star5_app4_30s_3,5,0.268128
+C,Binary: 45 degrees,visC_star5_app4_30s_2,5,0.181079
+C,Binary: 45 degrees,visC_star5_app9_30s_1,6,0.162810
+C,Binary: 45 degrees,visC_star5_app9_30s_4,6,0.210186
+C,Binary: 45 degrees,visC_star5_app9_30s_3,6,0.150645
+C,Binary: 45 degrees,visC_star5_app9_30s_2,6,0.155854
+C,Binary: 45 degrees,visC_star5_app10_30s_2,8,0.380106
+C,Binary: 45 degrees,visC_star5_app10_30s_3,8,0.398368
+C,Binary: 45 degrees,visC_star5_app10_30s_4,8,0.398496
+C,Binary: 45 degrees,visC_star5_app10_30s_1,8,0.399440
+C,Binary: 45 degrees,visC_star5_app5_30s_4,10,0.513302
+C,Binary: 45 degrees,visC_star5_app5_30s_2,10,0.532600
+C,Binary: 45 degrees,visC_star5_app5_30s_3,10,0.510614
+C,Binary: 45 degrees,visC_star5_app5_30s_1,10,0.525536
+C,Binary: 45 degrees,visC_star5_app6_30s_1,15,0.136571
+C,Binary: 45 degrees,visC_star5_app6_30s_3,15,0.179680
+C,Binary: 45 degrees,visC_star5_app6_30s_2,15,0.181201
+C,Binary: 45 degrees,visC_star5_app6_30s_4,15,0.180158
