@@ -62,7 +62,8 @@ for i in range(0,4095) :
 #print "freq_max = %10.5f MHz" % (freq[4094])
 
 
-print "flat: ",table
+
+print ("flat: ",table)
 dtable = os.path.join(dir,table)
 in_file  = open( str( dtable ), "r" )
 
@@ -118,21 +119,21 @@ while line != '':
         Fminmax[1,i]=value            
     #plot.scatter(freq, Fsingle, s=1, color='yellow', marker='o')
 
-print "  lines = ",nr
+print ("  lines = ",nr)
 
 F/=nr # mean
 
-print "median smoothing..."
+print ("median smoothing...")
 mF=np.zeros_like(F)
 for i in range(0+medrad,4095-medrad) :
   mF[i] = np.median(F[i-medrad:i+1+medrad])
 
 if create==1:
-  print "creating flat*.spec..."
+  print ("creating flat*.spec...")
   flatspecname = "flat_"+table+"_"+str(medrad)+".spec"
-  print flatspecname
+  print (flatspecname)
   flatspec = open(os.path.join(dir,flatspecname), 'w')
-  print "writing: ",flatspecname
+  print ("writing: ",flatspecname)
   idx=np.array(range(0,4095))
   for i in range(0,4095) :
     flatspec.write('{0:10.0f} {1:10.4f}\n'.format(idx[i],mF[i]))
@@ -146,7 +147,7 @@ if create==1:
 # plot.plot(freq,  Fmin, linestyle='-', color='yellow', linewidth=1)
 # plot.plot(freq,  Fmax, linestyle='-', color='yellow', linewidth=1)    
 
-print "plotting..."
+print ("plotting...")
 
 xx_vec = np.zeros((2,4095)) 
 for i in range(0,4095) :
@@ -171,7 +172,7 @@ xlabel('register nr [ ]')
 ylabel('Analog Digital Units [ ]')
 
 Fmax=np.max(F[1000:3000])
-print Fmax
+print (Fmax)
 # plot.axis([1416.5,1423.5,100000.,700000.])
 #plot.axis([0.,4096.,0.,700000.])
 plot.axis([0.,4096.,0.,Fmax*1.1])
@@ -200,7 +201,7 @@ if png==1 :
 
 # mouse click
 def onclick(event):
-  print '  %9.4f MHz     %10.0f ' % (event.xdata, event.ydata)
+  print ("  %9.4f MHz     %10.0f " % (event.xdata, event.ydata))
   return
 
 if display :

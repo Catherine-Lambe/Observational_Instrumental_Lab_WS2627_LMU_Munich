@@ -16,7 +16,7 @@ value = args.value
 
 for FILE in args.FILES:
   if key=="" :     
-    print str( FILE )
+    print (str( FILE ))
   infile   = open( str( FILE ), "r" )
   outfile  = open( "bla", "w" )
   line=' '
@@ -26,15 +26,15 @@ for FILE in args.FILES:
       if line[:1]=='#' :
         v = [s for s in line.split()]
         if key=="" :      
-          print "    %10s  %14s" % (v[1],v[2])
+          print ("    %10s  %14s" % (v[1],v[2]))
         else :
           if key == v[1] :
-            print "%45s  %10s  %14s" % (FILE,v[1],v[2])
+            print ("    %45s  %10s  %14s" % (FILE,v[1],v[2]))
     else :
       if line[:1]=='#' :
         v = [s for s in line.split()]
         if key == v[1] :
-          print "%45s  %10s  %14s     ---> %14s" % (FILE,v[1],v[2],value)
+          print ("%45s  %10s  %14s     ---> %14s" % (FILE,v[1],v[2],value))
           outfile.write('# {0:>10s} {1:>15s}\n'.format(key,value))
         else :
           outfile.write(line)   

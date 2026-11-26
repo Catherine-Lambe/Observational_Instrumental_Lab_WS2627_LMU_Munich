@@ -16,7 +16,7 @@ import scipy.ndimage as ndimage
 import mpl_toolkits.mplot3d.axes3d as ax3d
 
 def read(table) :
-  print table
+  print (table)
   data = np.genfromtxt(table,usecols=(5, 7, 11, 13, 19),comments='#')
   AZ    = data[:,0]
   EL    = data[:,1]
@@ -30,12 +30,12 @@ def click(event):
   global ix,iy
   ix = event.xdata
   iy = event.ydata
-  print " click  %7.4f %7.4f" % (ix,iy)
+  print (" click  %7.4f %7.4f" % (ix,iy))
   return
 
 
 def gauss(r,A,sig,C,r0) :
-  return C+A*exp(-(r-r0)**2/(2.*sig**2))
+  return C+A*np.exp(-(r-r0)**2/(2.*sig**2))
 
 
 #def gauss2d(x,y,A,sig,C,x0,y0) :
@@ -52,11 +52,11 @@ def fit_gauss2d(x,y,z):
     #print "A=",A
     #print "C=",C
     (ix,iy) = np.unravel_index(np.argmax(z),z.shape)
-    print z
-    print "index_max=",ix,iy
+    print (z)
+    print ("index_max=",ix,iy)
     x0 = x[ix,iy]
     y0 = y[ix,iy]
-    print "x0,y0 =",x0,y0
+    print ("x0,y0 =",x0,y0)
     sigx = 2.43
     sigy = 2.43
     # p_in = (C,A,x0,y0,sigx,sigy)
@@ -200,18 +200,18 @@ for tab in table :
   Dgeom = 2.42
   Ageom = (Dgeom/2.)**2*np.pi
 
-  print "sig_meas   [deg] = ",sig_meas
-  print "sig_obj    [deg] = ",sig_obj
-  print "sig_beam   [deg] = ",sig_beam
+  print ("sig_meas   [deg] = ",sig_meas)
+  print ("sig_obj    [deg] = ",sig_obj)
+  print ("sig_beam   [deg] = ",sig_beam)
   
   if verbose > 0 :
-    print "HPBW_beam  [deg] = ",HPBW_beam
-    print "Omega_HPBW  [sr] = ",OmegaHPBW
-    print "Omega_A     [sr] = ",OmegaA
-    print "A_eff      [m^2] = ",Aeff
-    print "D_eff        [m] = ",Deff
-    print "A_geom     [m^2] = ",Ageom
-    print "D_geom       [m] = ",Dgeom
+    print ("HPBW_beam  [deg] = ",HPBW_beam)
+    print ("Omega_HPBW  [sr] = ",OmegaHPBW)
+    print ("Omega_A     [sr] = ",OmegaA)
+    print ("A_eff      [m^2] = ",Aeff)
+    print ("D_eff        [m] = ",Deff)
+    print ("A_geom     [m^2] = ",Ageom)
+    print ("D_geom       [m] = ",Dgeom)
   
   ################################################################################
   
@@ -320,7 +320,7 @@ for tab in table :
   plt.show()
   #print "center = %5.4f  %5.4f" % (ix,iy)
   s = "{:7.2f}".format(AZ[12])+" "+"{:7.2f}".format(float(EL[12]))+" "+"{:7.4f}".format(ix)+"  "+"{:7.4f}".format(iy)+'\n'
-  print s
+  print (s)
   outtable.write(s)
 
 outtable.close()

@@ -57,21 +57,21 @@ verbose =  args.verbose
 
 def onclick(event):
   #print '  %9.4f MHz   %8.2f K   %10.0f ' % (event.xdata, event.ydata, event.ydata/factor)
-  print '  %9.4f    %10.0f ' % (event.xdata, event.ydata)
+  print ("  %9.4f    %10.0f " % (event.xdata, event.ydata))
   #ax.plot([event.xdata,event.xdata], [0,1e6], linestyle='-', color='red',  linewidth=1)
   #show()
   return
 
 def onclick_MHz(event):
   #print '  %9.4f MHz   %8.2f K   %10.0f ' % (event.xdata, event.ydata, event.ydata/factor)
-  print '  %9.4f MHz   %8.2f K   %10.0f ' % (event.xdata, event.ydata, event.ydata)
+  print ("  %9.4f MHz   %8.2f K   %10.0f " % (event.xdata, event.ydata, event.ydata))
   #ax.plot([event.xdata,event.xdata], [0,1e6], linestyle='-', color='red',  linewidth=1)
   #show()
   return
 
 def onclick_kms(event):
   #print '  %9.4f km/s  %8.2f K   %10.0f ' % (event.xdata, event.ydata, event.ydata/factor)
-  print '  %9.4f km/s  %8.2f K   %10.0f ' % (event.xdata, event.ydata, event.ydata)
+  print ("  %9.4f km/s  %8.2f K   %10.0f " % (event.xdata, event.ydata, event.ydata))
   #ax.plot([event.xdata,event.xdata], [0,1e6], linestyle='-', color='red',  linewidth=1)
   #show()
   return
@@ -257,9 +257,9 @@ for i in range(0,4095) :
 
 
 if verbose>=3:
-  print "register HI",reg[regHI],freq[regHI],freqHI
-  print "freq_min = %10.5f MHz" % (freq[0])
-  print "freq_max = %10.5f MHz" % (freq[4094])
+  print ("register HI",reg[regHI],freq[regHI],freqHI)
+  print ("freq_min = %10.5f MHz" % (freq[0]))
+  print ("freq_max = %10.5f MHz" % (freq[4094]))
 
 ##### Temp calibfactor by Lisa Uhlirsch with 150701_1718_Absorber_T30.tab
 if verbose>=10:
@@ -271,7 +271,7 @@ if verbose>=10:
   # Pvanehot = 427400.
   # print "Pvanehot = ",Pvanehot
   factor2015 = (Tvanehot-Tvanecold)/(Pvanehot-Pvanecold)
-  print "calibfactor 2015 (Lisa Uhlirsch) =  %10.5g " % factor2015
+  print ("calibfactor 2015 (Lisa Uhlirsch) =  %10.5g " % factor2015)
 
 
 ##### Temp calibfactor 161129 white
@@ -283,7 +283,7 @@ if verbose>=10:
   Pvanecold  = 583610.  
   Pvanehot   = 618888.  
   factor2016 = (Tvanehot-Tvanecold)/(Pvanehot-Pvanecold)
-  print "calibfactor 2016 (flat, astrolab) = %10.5g" % factor2016
+  print ("calibfactor 2016 (flat, astrolab) = %10.5g" % factor2016)
 
 ##### diode
 #                161129_1658_Kalt1_151124_diode.tab           435645         277010       271.7      271.7        0.0
@@ -292,7 +292,7 @@ if verbose>=10:
   Pcold  = 293190.  
   Pdiode = 435645.
   Tdiode = (435645.-293190.)*factor2016
-  print "Tdiode = %10.3f" % Tdiode
+  print ("Tdiode = %10.3f" % Tdiode)
 
 
 # creating measung.spec
@@ -312,7 +312,7 @@ for FILE in args.FILES:
   filename = FILE
 
   if verbose>=1:
-    print filename
+    print (filename)
 
 
 
@@ -362,7 +362,7 @@ for FILE in args.FILES:
   line = in_file.readline();  flatname=      line.split()[2] 
 
   if verbose>=1:
-    print "  calibfactor = ",factor
+    print ("  calibfactor = ",factor)
     
   F = np.zeros(4095)
   Fminmax = np.zeros((2,4095)) 
@@ -407,16 +407,16 @@ for FILE in args.FILES:
       #  ax.scatter(x, Fsingle, s=1, color='yellow', marker='o')
   #print " "
   if verbose>=1:
-    print "  nr of averaged spectra = ",nr
+    print ("  nr of averaged spectra = ",nr)
   # mean
   F/=nr 
   time_m/=nr 
   RA_m/=nr 
   DE_m/=nr 
 
-  print "  <time> = ",time_m
-  print "  <RA>   = ",RA_m
-  print "  <DE>   = ",DE_m
+  print ("  <time> = ",time_m)
+  print ("  <RA>   = ",RA_m)
+  print ("  <DE>   = ",DE_m)
 
   sc = SkyCoord(ra=RA_m*15., dec=DE_m, unit='deg', frame=FK5, equinox='J2000.0')
   gc = SkyCoord(l=10*u.degree, b=10*u.degree, frame='galactic',unit='deg')
@@ -424,14 +424,14 @@ for FILE in args.FILES:
   lon=gc_new.l.degree
   lat=gc_new.b.degree
 
-  print "  galactic longitude <l>  = ",lon
-  print "  galactic latitude  <b>  = ",lat
+  print ("  galactic longitude <l>  = ",lon)
+  print ("  galactic latitude  <b>  = ",lat)
 
   vsun0 = 220.
   vstarRmin = vsun0
   vrmax = vstarRmin - vsun0*np.sin(lon/180.*np.pi)
 
-  print "  vrmax = %10.2f km/s" % (vrmax)
+  print ("  vrmax = %10.2f km/s" % (vrmax))
   
   ################ calculate velocity grid ############
   # see also https://ned.ipac.caltech.edu/forms/calculator.html
@@ -451,9 +451,9 @@ for FILE in args.FILES:
     vlsr_max = np.max(vlsr_all)
 
   if verbose>=1:
-    print '  vlsr     = %6.2f km/s' % (vlsr)
-    print '  vlsr_min = %6.2f km/s' % (vlsr_min)
-    print '  vlsr_max = %6.2f km/s' % (vlsr_max)
+    print ("  vlsr     = %6.2f km/s" % (vlsr))
+    print ("  vlsr_min = %6.2f km/s" % (vlsr_min))
+    print ("  vlsr_max = %6.2f km/s" % (vlsr_max))
 
   veloc = (1.-freq/freqHI)*c - vlsr
   # print "  veloc = ",veloc
@@ -463,18 +463,18 @@ for FILE in args.FILES:
   freqHI_min = (1.-vlsr_min/c) * freqHI
   freqHI_max = (1.-vlsr_max/c) * freqHI 
   if verbose>=1:
-    print '  freqHI     = %10.3f MHz' % (freqHI)
-    print '  freqHI_lsr = %10.3f MHz' % (freqHI_lsr)
-    print '  freqHI_min = %10.3f MHz' % (freqHI_min)
-    print '  freqHI_max = %10.3f MHz' % (freqHI_max)
+    print ("  freqHI     = %10.3f MHz" % (freqHI))
+    print ("  freqHI_lsr = %10.3f MHz" % (freqHI_lsr))
+    print ("  freqHI_min = %10.3f MHz" % (freqHI_min))
+    print ("  freqHI_max = %10.3f MHz" % (freqHI_max))
   
   ##### flatting spectra with flat frame
   norm = np.ones_like(F) # 1 for no flat correction
 
   if makeflat :
     if verbose>=1:
-      print "  makeflat: "
-      print "      ",flatname
+      print ("  makeflat: ")
+      print ("      ",flatname)
     #flatname=os.path.join(dirflat,"flat.spec")
     #[mF]=read_columns( flatname, [2])
     # dataframe_flat = pd.read_csv(flatname,header=-1,delim_whitespace=True)
@@ -488,10 +488,10 @@ for FILE in args.FILES:
     #  print "len=",len(freq[1704:1905]),a[0],a[100],a[200]
     norm = mF/np.median(mF[1704:1905])
     if verbose>=1:
-      print "       flat median [1704:1905] = ",np.median(norm[1704:1905])
+      print ("       flat median [1704:1905] = ",np.median(norm[1704:1905]))
       if verbose>=3:
-        print "       flat median [1001:2001] = ",np.median(norm[1001:2000])
-        print "       flat median [2001:3000] = ",np.median(norm[2001:3000])
+        print ("       flat median [1001:2001] = ",np.median(norm[1001:2000]))
+        print ("       flat median [2001:3000] = ",np.median(norm[2001:3000]))
     for i in range(0,4095) :
       if norm[i]>0. :
         F[i]    /= norm[i]
@@ -512,20 +512,20 @@ for FILE in args.FILES:
   Fmed_2001_3000 = np.median(F[2001:3000])
   smed_2001_3000 =    np.std(F[2001:3000])
   if verbose>=3:
-    print "  Test: spec median [1001:2000] = %8.0f +- %5.0f " % (Fmed_1001_2000,smed_1001_2000)
-    print "  Test: spec median [2001:3000] = %8.0f +- %5.0f " % (Fmed_2001_3000,smed_2001_3000)
+    print ("  Test: spec median [1001:2000] = %8.0f +- %5.0f " % (Fmed_1001_2000,smed_1001_2000))
+    print ("  Test: spec median [2001:3000] = %8.0f +- %5.0f " % (Fmed_2001_3000,smed_2001_3000))
 
   ADUtotcalc     = np.median(F[604:3005])
   sigADUtotcalc  = np.median([ np.std(F[1204:1404]),np.std(F[1404:1604]),np.std(F[1604:1805]),np.std(F[1805:2005]),np.std(F[2005:2205]) ])
   if verbose>=2:
-    print "  ADUtotcalc [604:3005] = %8.0f +- %5.0f " % (ADUtotcalc,sigADUtotcalc)
+    print ("  ADUtotcalc [604:3005] = \%8.0f +- \%5.0f " % (ADUtotcalc,sigADUtotcalc))
 
-  #print "  spec aver [763:768] = ",np.average(F[763:768])
+  #print ("  spec aver [763:768] = ",np.average(F[763:768]))
 
-  if ADUtot_in<>0. : 
+  if ADUtot_in!=0. : 
     ADUtot   = ADUtot_in
     if verbose>=2:
-      print "  ADUtot_in             = %8.0f" % (ADUtot_in)
+      print ("  ADUtot_in             = %8.0f" % (ADUtot_in))
   else :
     ADUtot   = np.median(F[604:3005])
   sigADUtot = sigADUtotcalc
@@ -537,9 +537,9 @@ for FILE in args.FILES:
   ADUobj_calc = ADUtot-ADUsys
 
   if verbose>=1:
-    print "  ADUtot = %7.0f +/- %6.0f     Ttot = %7.2f K = %7.2f C" % (ADUtot,sigADUtot,Ttot,Ttot-T0)
-    print "  ADUobj = %7.0f                Tobj = %7.2f K = %7.2f C" % (ADUobj_calc,Tobj_calc,Tobj_calc-T0)
-    print "  ADUsys = %7.0f                Tsys = %7.2f K = %7.2f C" % (ADUsys,Tsys,Tsys-T0)
+    print ("  ADUtot = %7.0f +/- %6.0f     Ttot = %7.2f K = %7.2f C" % (ADUtot,sigADUtot,Ttot,Ttot-T0))
+    print ("  ADUobj = %7.0f                Tobj = %7.2f K = %7.2f C" % (ADUobj_calc,Tobj_calc,Tobj_calc-T0))
+    print ("  ADUsys = %7.0f                Tsys = %7.2f K = %7.2f C" % (ADUsys,Tsys,Tsys-T0))
 
   meastab.write('{0:>50s}   {1:14.0f} {2:12.0f}   {3:12.6g}   {4:10.2f} {5:10.2f} {6:10.2f} {7:10.2f}\n'.format(filename,ADUtot,sigADUtot,factor,Ttot,Tobj,Tsys,Tobj_calc))
                 
@@ -629,7 +629,7 @@ for FILE in args.FILES:
     else :
       y_min = Temp0
       y_max = Temp1
-    print "  plotting..."
+    print ("  plotting...")
     #for i in range(0,4095) :
     #  ax.plot([x_vec[i],x_vec[i]],  [Fmin[i]*factor,Fmax[i]*factor], linestyle='-', color='yellow', linewidth=1)
     ax.plot(xx_vec, Fminmax*factor, linestyle='-', color='yellow', linewidth=1)
@@ -645,7 +645,7 @@ for FILE in args.FILES:
     else :
       y_min = ADU0
       y_max = ADU1
-    print "  plotting..."
+    print ("  plotting...")
     # for i in range(0,4095) :
     #   ax.plot([x_vec[i],x_vec[i]],  [Fmin[i],Fmax[i]], linestyle='-', color='yellow', linewidth=1)    
     ax.plot(xx_vec, Fminmax, linestyle='-', color='yellow', linewidth=1)    
