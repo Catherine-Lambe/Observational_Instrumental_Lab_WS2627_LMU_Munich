@@ -821,6 +821,7 @@ for FILE in args.FILES:
   plt.legend(loc='upper right')
     
   #### output file
+print('File working')
   if pdf==1 :
     plt.savefig(filename+"_"+xplot+".pdf")
   if png==1 :
@@ -833,8 +834,9 @@ for FILE in args.FILES:
   #  buf = fig.canvas.mpl_connect('button_press_event', onclick)
     plt.show()
   else :
-    plt.clf()    # clear the current figure
+      plt.show()
+    #plt.clf()    # clear the current figure
 
   # k = input("weiter mit <enter>")
 
-meastab.close()
+#meastab.close()
